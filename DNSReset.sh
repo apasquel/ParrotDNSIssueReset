@@ -1,6 +1,7 @@
 #!/bin/bash
 #Running will reset and restart DNS service on Parrot OS due to issues with AnonSurf.
 #Source:  https://askubuntu.com/questions/1106659/how-to-reset-dns-settings-to-the-defaults  
+#Austin Pasquel
 
 sudo rm /etc/resolv.conf && sudo ln -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 
